@@ -24,5 +24,6 @@ connectDb()
     })
 })
     .catch((err)=>{
-        console.log(err)
+        console.log("mongoose connection failed")
+        process.exit(1)
     })
